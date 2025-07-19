@@ -61,55 +61,123 @@
             ◀
           </button>
 
-          <!-- Carrusel -->
-          <div id="carouselServicios" class="flex overflow-x-auto scroll-smooth space-x-6 px-10">
+          <!-- Carrusel mejorado -->
+          <div id="carouselServicios" class="flex overflow-x-auto scroll-smooth space-x-6 px-10 py-4 snap-x snap-mandatory scrollbar-hide">
             
             <!-- Tarjeta 1 -->
-            <div class="relative w-full h-64 bg-cover bg-center rounded-lg shadow-lg group" style="background-image: url('MANT_LIN_MED_1.png');">
-              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('MANT_LIN_MED_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
                 <h3 class="text-xl font-bold text-white mb-2">Mantenimiento de Media Tensión</h3>
-                <p class="text-white text-sm mb-3">Revisión de estructuras, cambio de componentes, prevención de fallas.</p>
+                <p class="text-white text-sm mb-3">Revisión y reparación preventiva de redes eléctricas aéreas de media tensión para asegurar un suministro confiable.</p>
                 <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
               </div>
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="relative group min-w-[250px] bg-gray-50 rounded-lg shadow overflow-hidden">
-              <div class="p-6 text-center">
-                <img src="laboratorio.png" class="w-20 mx-auto mb-4" />
-                <h3 class="text-xl font-semibold mb-2 text-blue-900">Ensayos de Laboratorio</h3>
-                <p class="text-gray-600">Evaluación técnica de materiales según normas.</p>
-              </div>
-              <div class="absolute inset-0 bg-blue-900 bg-opacity-90 text-white p-6 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h4 class="text-lg font-semibold mb-2">Detalles del servicio</h4>
-                <ul class="text-sm mb-4 list-disc list-inside text-left">
-                  <li>Granulometría</li>
-                  <li>Proctor modificado</li>
-                  <li>CBR</li>
-                </ul>
-                <button class="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition">
-                  Ver más
-                </button>
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('INSTAL_MONT_TRANSFOR_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Instalación y Montaje de Transformadores</h3>
+                <p class="text-white text-sm mb-3">Instalación segura y eficiente de transformadores en sistemas de distribución eléctrica.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
               </div>
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="relative group min-w-[250px] bg-gray-50 rounded-lg shadow overflow-hidden">
-              <div class="p-6 text-center">
-                <img src="supervision.png" class="w-20 mx-auto mb-4" />
-                <h3 class="text-xl font-semibold mb-2 text-blue-900">Supervisión de Obras</h3>
-                <p class="text-gray-600">Control técnico durante la ejecución de proyectos civiles.</p>
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('INSTAL_MONT_SUBESTACION_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Instalación y Montaje de Subestación Biposte</h3>
+                <p class="text-white text-sm mb-3">Construcción de subestaciones aéreas compactas para distribución local de energía.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
               </div>
-              <div class="absolute inset-0 bg-blue-900 bg-opacity-90 text-white p-6 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h4 class="text-lg font-semibold mb-2">Detalles del servicio</h4>
-                <ul class="text-sm mb-4 list-disc list-inside text-left">
-                  <li>Supervisión diaria</li>
-                  <li>Informes técnicos</li>
-                  <li>Gestión de calidad</li>
-                </ul>
-                <button class="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition">
-                  Ver más
-                </button>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('MONT_TRANSFOR_CAJA_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Montaje de Transformadores y Caja Porta ITM</h3>
+                <p class="text-white text-sm mb-3">Instalación de equipos de protección y transformación en redes de baja y media tensión.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('MANT_LIN_MED_CAMBIO_AISLA_POL_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Mantenimiento de Líneas y Cambio de Aisladores Poliméricos</h3>
+                <p class="text-white text-sm mb-3">Sustitución de aisladores dañados para evitar fugas y mantener la integridad del sistema.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('INSTAL_SUMIN_ELEC_2.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Instalación de Nuevo Suministro Eléctrico</h3>
+                <p class="text-white text-sm mb-3">Conexión de nuevos usuarios a la red eléctrica mediante instalaciones seguras y certificadas.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('REUBIC_RECOR_LIN_MED_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Reubicación de Líneas de Media Tensión</h3>
+                <p class="text-white text-sm mb-3">Modificación del trazado de líneas eléctricas aéreas por interferencias o rediseños urbanos.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('EJEC_LIN_TEN_MONT_2.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Ejecución de Líneas de Baja Tensión y Montaje de Postes</h3>
+                <p class="text-white text-sm mb-3">Tendido de redes eléctricas urbanas o rurales para servicios residenciales y comerciales.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('ESTUD_MEC_SUEL_2.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Estudio de Mecánica de Suelos</h3>
+                <p class="text-white text-sm mb-3">Análisis del terreno para evaluar su capacidad de soporte en proyectos de construcción.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 10 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('MEMO_CALC_CLIM_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Memoria de Cálculo de Cimentación y Torre</h3>
+                <p class="text-white text-sm mb-3">Documentación estructural que garantiza la seguridad y estabilidad de cimentaciones y torres.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 11 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('DISENO_PLANOS_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Diseño de Planos</h3>
+                <p class="text-white text-sm mb-3">Elaboración profesional de planos arquitectónicos y de especialidades para licencias y ejecución.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 12 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('CONS_ESTAC_BASE_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Construcción de Estación Base Celular</h3>
+                <p class="text-white text-sm mb-3">Obras civiles y electromecánicas para la instalación de infraestructura de telecomunicaciones.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
+              </div>
+            </div>
+
+            <!-- Tarjeta 13 -->
+            <div class="flex-shrink-0 w-72 h-80 bg-cover bg-center rounded-lg shadow-lg group snap-start" style="background-image: url('MONT_ESTRUC_ESTAC_BASE_1.png');">
+              <div class="relative w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-center items-center text-center px-4">
+                <h3 class="text-xl font-bold text-white mb-2">Montaje de Estructuras Metálicas para Estación Base</h3>
+                <p class="text-white text-sm mb-3">Instalación de torres, mástiles y estructuras de soporte para estaciones base de telecomunicación.</p>
+                <button class="mt-2 bg-yellow-400 text-blue-900 font-semibold py-1 px-4 rounded hover:bg-yellow-300 transition">Ver más</button>
               </div>
             </div>
 
@@ -124,6 +192,17 @@
         </div>
       </div>
     </section>
+
+    <!-- CSS adicional para ocultar la barra de scroll (opcional) -->
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
 
     <!-- Proyectos -->
     <section id="proyectos" class="py-20 bg-gray-100">
