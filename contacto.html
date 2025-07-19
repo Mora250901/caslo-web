@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - CASLO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-white shadow fixed w-full z-20 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-blue-900">
+            <img src="LOGO_NOMBRE.png" alt="Logo de la empresa" class="h-12 w-auto">
+          </a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-gray-700 hover:text-blue-700">Inicio</a></li>
+        <li><a href="nosotros.html" class="text-gray-700 hover:text-blue-700">Nosotros</a></li>
+        <li><a href="servicios.html" class="text-gray-700 hover:text-blue-700">Servicios</a></li>
+        <li><a href="proyectos.html" class="text-gray-700 hover:text-blue-700">Proyectos</a></li>
+        <li><a href="contacto.html" class="text-gray-700 hover:text-blue-700 font-bold">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="py-20 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('CONTACTO_FONDO.jpg');">
+        <div class="max-w-4xl mx-auto bg-white/90 shadow-xl rounded-2xl p-10 relative backdrop-blur-sm">
+    
+        <!-- Título principal visible -->
+        <h3 class="text-3xl font-bold text-blue-900 mb-10 relative z-10 text-center">
+            Comunícate con nosotros
+        </h3>
+    
+        <!-- Formulario -->
+        <form class="space-y-6 relative z-10">
+            <div>
+                <label for="nombre" class="block text-sm font-medium text-blue-800">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div>
+                <label for="empresa" class="block text-sm font-medium text-blue-800">Empresa</label>
+                <input type="text" id="empresa" name="empresa" required
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div>
+                <label for="asunto" class="block text-sm font-medium text-blue-800">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div>
+                <label for="celular" class="block text-sm font-medium text-blue-800">Celular</label>
+                <input type="tel" id="celular" name="celular" required pattern="[0-9]{9}"
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div>
+                <label for="correo" class="block text-sm font-medium text-blue-800">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div>
+                <label for="mensaje" class="block text-sm font-medium text-blue-800">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required
+                class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm px-4 py-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+            
+            <div class="text-center">
+                <button type="submit"
+                class="bg-blue-900 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-800 transition">
+                Enviar mensaje
+                </button>
+            </div>
+
+            <div class="mt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-blue-900">
+                    <div class="flex items-center space-x-2">
+                      <span class="text-2xl">📞</span>
+                      <strong class="text-base">+51 999 999 999</strong>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <span class="text-2xl">📧</span>
+                      <strong class="text-base">correo@empresa.com</strong>
+                    </div>
+            </div>
+            
+        </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+              <p class="text-sm text-center md:text-left">&copy; <span id="year"></span> CASLO SAC. Todos los derechos reservados.</p>
+              <div class="mt-4 md:mt-0 space-x-4">
+                <a href="#inicio" class="text-sm hover:underline">Inicio</a>
+                <a href="#servicios" class="text-sm hover:underline">Servicios</a>
+                <a href="#proyectos" class="text-sm hover:underline">Proyectos</a>
+              </div>
+            </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51943024781" 
+        class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50" 
+        target="_blank" 
+        aria-label="Chat en WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-6 h-6">
+    <path
+        d="M12.04 2.003A9.934 9.934 0 0 0 2 11.944a9.88 9.88 0 0 0 1.46 5.19L2 22l4.99-1.426a9.932 9.932 0 0 0 5.05 1.31h.002A9.934 9.934 0 0 0 22 11.944 9.937 9.937 0 0 0 12.04 2.003Zm0 1.997c4.404 0 7.96 3.554 7.96 7.944a7.932 7.932 0 0 1-7.952 7.944 7.96 7.96 0 0 1-4.03-1.108l-.285-.17-2.957.846.874-2.882-.187-.296a7.92 7.92 0 0 1-1.318-4.334 7.944 7.944 0 0 1 7.895-7.944Zm-2.69 4.983c-.23-.503-.473-.514-.692-.524l-.59-.01c-.203 0-.532.075-.81.377s-1.063 1.037-1.063 2.528 1.088 2.934 1.24 3.135 2.096 3.2 5.18 4.36c.724.31 1.29.494 1.73.633.727.23 1.39.197 1.913.12.584-.088 1.798-.734 2.053-1.442.255-.708.255-1.316.18-1.442-.075-.126-.285-.197-.598-.345s-1.762-.868-2.035-.967c-.272-.1-.47-.15-.668.15s-.767.966-.94 1.163c-.173.196-.346.22-.637.076s-1.238-.456-2.36-1.454a8.78 8.78 0 0 1-1.62-2.016c-.17-.29-.018-.444.127-.59.13-.129.29-.336.434-.504.14-.164.19-.28.287-.47.095-.19.048-.358-.025-.504-.07-.147-.668-1.62-.94-2.22Z" />
+        </svg>
+    </a>
+
+</body>
+</html>
