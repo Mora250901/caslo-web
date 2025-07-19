@@ -3,56 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caslo Ingeniería y Servicios</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CASLO SAC</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- Fuente Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://jcgeotecnia.com/wp-content/uploads/2022/03/favicon.ico" />
   </head>
-  <body class="bg-white text-gray-800">
-    <header class="bg-blue-900 text-white p-6 shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold">CASLO INGENIERÍA</h1>
-        <nav class="space-x-4">
-          <a href="#inicio" class="hover:underline">Inicio</a>
-          <a href="#servicios" class="hover:underline">Servicios</a>
-          <a href="#contacto" class="hover:underline">Contacto</a>
+
+  <body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar fija -->
+    <header class="bg-white shadow fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-900">CASLO SAC</h1>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#inicio" class="text-gray-700 hover:text-blue-700 font-medium">Inicio</a>
+          <a href="#servicios" class="text-gray-700 hover:text-blue-700 font-medium">Servicios</a>
+          <a href="#proyectos" class="text-gray-700 hover:text-blue-700 font-medium">Proyectos</a>
+          <a href="#contacto" class="text-gray-700 hover:text-blue-700 font-medium">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <main class="container mx-auto p-6">
-      <section id="inicio" class="py-12 text-center">
-        <h2 class="text-4xl font-bold mb-4">Bienvenido a CASLO</h2>
-        <p class="text-lg text-gray-600">
-          Somos especialistas en geotecnia, ingeniería civil y servicios de mantenimiento industrial.
-        </p>
-      </section>
+    <!-- Hero banner -->
+    <section id="inicio" class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://jcgeotecnia.com/wp-content/uploads/2022/03/banner-home-1.jpg');">
+      <div class="bg-black bg-opacity-60 w-full h-full absolute"></div>
+      <div class="text-center text-white z-10 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Ingeniería Geotécnica y Servicios Especializados</h1>
+        <p class="text-lg md:text-xl mb-6">Comprometidos con la calidad, seguridad y excelencia profesional</p>
+        <a href="#contacto" class="bg-yellow-400 text-blue-900 font-semibold py-2 px-6 rounded hover:bg-yellow-300 transition">Contáctanos</a>
+      </div>
+    </section>
 
-      <section id="servicios" class="py-12 bg-gray-100">
-        <h2 class="text-3xl font-bold mb-6 text-center">Nuestros Servicios</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-white p-6 shadow rounded-xl">
-            <h3 class="text-xl font-semibold mb-2">Estudios Geotécnicos</h3>
-            <p>Exploración de suelos, mecánica de suelos, ensayos de laboratorio.</p>
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Servicio -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" class="w-20 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-center mb-2">Estudios de Suelo</h3>
+            <p class="text-center text-gray-600">Análisis geotécnico detallado para garantizar la estabilidad de tus proyectos.</p>
           </div>
-          <div class="bg-white p-6 shadow rounded-xl">
-            <h3 class="text-xl font-semibold mb-2">Ingeniería Civil</h3>
-            <p>Supervisión de obras, estructuras, diseño de cimentaciones.</p>
+          <!-- Puedes duplicar más tarjetas aquí -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="https://cdn-icons-png.flaticon.com/512/3039/3039395.png" class="w-20 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-center mb-2">Ensayos de Laboratorio</h3>
+            <p class="text-center text-gray-600">Evaluación de materiales según normas técnicas nacionales e internacionales.</p>
           </div>
-          <div class="bg-white p-6 shadow rounded-xl">
-            <h3 class="text-xl font-semibold mb-2">Mantenimiento Industrial</h3>
-            <p>Montajes, instalaciones eléctricas, limpieza técnica y más.</p>
+          <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="https://cdn-icons-png.flaticon.com/512/1923/1923987.png" class="w-20 mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-center mb-2">Supervisión de Obras</h3>
+            <p class="text-center text-gray-600">Aseguramos el cumplimiento técnico en la ejecución de obras civiles.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contacto" class="py-12 text-center">
-        <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-        <p class="text-gray-700 mb-2">Email: contacto@casloingenieria.com</p>
-        <p class="text-gray-700">Teléfono: +51 999 999 999</p>
-      </section>
-    </main>
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Proyectos Recientes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow rounded overflow-hidden hover:shadow-lg">
+            <img src="https://via.placeholder.com/600x300" class="w-full" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg text-blue-900">Estudio Geotécnico - Lima</h3>
+              <p class="text-sm text-gray-600 mt-2">Análisis de suelos para edificio corporativo en San Isidro.</p>
+            </div>
+          </div>
+          <!-- Repite otros proyectos -->
+          <div class="bg-white shadow rounded overflow-hidden hover:shadow-lg">
+            <img src="https://via.placeholder.com/600x300" class="w-full" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg text-blue-900">Supervisión Técnica - Cusco</h3>
+              <p class="text-sm text-gray-600 mt-2">Control técnico en carreteras rurales.</p>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded overflow-hidden hover:shadow-lg">
+            <img src="https://via.placeholder.com/600x300" class="w-full" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg text-blue-900">Ensayos de Laboratorio - Arequipa</h3>
+              <p class="text-sm text-gray-600 mt-2">Pruebas para proyecto minero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="bg-blue-900 text-white text-center py-4">
-      <p>&copy; 2025 CASLO INGENIERÍA Y SERVICIOS. Todos los derechos reservados.</p>
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Contáctanos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Datos de Contacto</h3>
+            <p class="mb-2">📍 <strong>RUC:</strong> 20608898108</p>
+            <p class="mb-2">📞 <strong>Jefe de energía:</strong> +51 978 355 710</p>
+            <p class="mb-2">📞 <strong>Jefe de proyectos:</strong> +51 901 416 892</p>
+            <p class="mb-2">📧 <strong>Email:</strong> contacto@caslosac.com</p>
+          </div>
+          <div>
+            <form action="#" method="POST" class="space-y-4">
+              <input type="text" placeholder="Nombre" class="w-full p-3 border border-gray-300 rounded" />
+              <input type="email" placeholder="Correo" class="w-full p-3 border border-gray-300 rounded" />
+              <textarea rows="4" placeholder="Mensaje" class="w-full p-3 border border-gray-300 rounded"></textarea>
+              <button class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-center md:text-left">&copy; <span id="year"></span> CASLO SAC. Todos los derechos reservados.</p>
+        <div class="mt-4 md:mt-0 space-x-4">
+          <a href="#inicio" class="text-sm hover:underline">Inicio</a>
+          <a href="#servicios" class="text-sm hover:underline">Servicios</a>
+          <a href="#proyectos" class="text-sm hover:underline">Proyectos</a>
+          <a href="#contacto" class="text-sm hover:underline">Contacto</a>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
