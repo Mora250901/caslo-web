@@ -17,7 +17,6 @@
         <li><a href="nosotros.html" class="text-gray-700 hover:text-blue-700">Nosotros</a></li>
         <li><a href="servicios.html" class="text-gray-700 hover:text-blue-700">Servicios</a></li>
         <li><a href="proyectos.html" class="text-gray-700 hover:text-blue-700">Proyectos</a></li>
-        <li><a href="contacto.html" class="text-gray-700 hover:text-blue-700 font-bold">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -75,6 +74,7 @@
                 </button>
             </div>
 
+            <!--version 1 en el cuadro
             <div class="mt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-blue-900">
                     <div class="flex items-center space-x-2">
                       <span class="text-2xl">📞</span>
@@ -82,25 +82,30 @@
                     </div>
                     <div class="flex items-center space-x-2">
                       <span class="text-2xl">📧</span>
-                      <strong class="text-base">correo@empresa.com</strong>
+                      <strong class="text-base">construccionesgeneralescaslo@gmail.com</strong>
                     </div>
             </div>
-            
+        -->
+
         </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-6">
-            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-              <p class="text-sm text-center md:text-left">&copy; <span id="year"></span> CASLO SAC. Todos los derechos reservados.</p>
-              <div class="mt-4 md:mt-0 space-x-4">
-                <a href="#inicio" class="text-sm hover:underline">Inicio</a>
-                <a href="#servicios" class="text-sm hover:underline">Servicios</a>
-                <a href="#proyectos" class="text-sm hover:underline">Proyectos</a>
-              </div>
+    <!--version 2
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Contáctanos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Datos de Contacto</h3>
+                <p class="mb-2">📍 <strong>RUC:</strong> 20608898108</p>
+                <p class="mb-2">📞 <strong>Jefe de energía:</strong> +51 978 355 710</p>
+                <p class="mb-2">📞 <strong>Jefe de proyectos:</strong> +51 901 416 892</p>
+                <p class="mb-2">📧 <strong>Email:</strong>construccionesgeneralescaslo@gmail.com</p>
             </div>
-    </footer>
+        </div>
+    </section>
+    -->
 
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/51943024781" 
@@ -113,5 +118,43 @@
         </svg>
     </a>
 
+    <!-- Footer -->
+    <footer class="bg-blue-100 text-black py-12">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+              
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="index.html" class="text-xl font-bold text-blue-900">
+                    <img src="LOGO_NOMBRE.png" alt="Logo de la empresa" class="h-12 w-auto mb-4">
+                    </a>
+                    <p class="text-sm text-center md:text-center">&copy; <span id="year"></span> CASLO SAC.</p>
+                    <p class="text-sm text-center md:text-left">
+                    Para presupuestos y cotizaciones no dude en contactarse con nosotros, encantados de atenderlos
+                    </p>
+                </div>
+          
+              <!-- CONTACTO -->
+              <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold mb-2">Contáctanos</h4>
+                <p class="text-sm mb-2">📄 RUC: 20608898108</p>
+                <p class="text-sm mb-2">📞 Jefe de Energia: 978 355 710</p>
+                <p class="text-sm mb-2">📞 Jefe de Proyectos: 901 416 892</p>
+                <p class="text-sm mb-2">📧 construccionesgeneralescaslo@gmail.com</p>
+              </div>
+          
+              <!-- HORARIO -->
+              <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold mb-2">Horario y lugar de atención</h4>
+                <p class="text-sm mb-2">🕒 Lunes a Sabado: 8:00 AM – 6:00 PM</p>
+                <p class="text-sm mb-2">❌ Domingos y feriados: Cerrado</p>
+                <p class="text-sm mb-2">📍 Av. Ejemplo 123, Lima, Perú</p>
+              </div>
+            </div>
+          </footer>
+          
+          <script>
+            // Actualizar el año automáticamente
+            document.getElementById("year").textContent = new Date().getFullYear();
+          </script>
+    
 </body>
 </html>
